@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta content="HTML Tidy for Java (vers. 26 sep. 2004), see www.w3.org" name="generator"/>
+      <meta charset="UTF-8"/>
+      <title>Swagger UI</title>
+      <link href="./swagger-ui.css" type="text/css" rel="stylesheet"/>
+      <link sizes="32x32" href="./favicon-32x32.png" type="image/png" rel="icon"/>
+      <link sizes="16x16" href="./favicon-16x16.png" type="image/png" rel="icon"/>
+      <style type="text/css">html
+      {
+        box-sizing: border-box;
+        overflow: -moz-scrollbars-vertical;
+        overflow-y: scroll;
+      }
+
+      *,
+      *:before,
+      *:after
+      {
+        box-sizing: inherit;
+      }
+
+      body
+      {
+        margin:0;
+        background: #fafafa;
+      }</style>
+   </head>
+   <body>
+      <div id="swagger-ui"/>
+      <script charset="UTF-8" src="./swagger-ui-bundle.js" type="text/javascript"></script>
+      <script charset="UTF-8" src="./swagger-ui-standalone-preset.js" type="text/javascript"></script>
+      <script type="text/javascript">window.onload = function() {
+      // Begin Swagger UI call region
+      const ui = SwaggerUIBundle({
+        url: "",
+        dom_id: '#swagger-ui',
+        deepLinking: true,
+        presets: [
+          SwaggerUIBundle.presets.apis,
+          SwaggerUIStandalonePreset
+        ],
+        plugins: [
+          SwaggerUIBundle.plugins.DownloadUrl
+        ],
+        layout: "StandaloneLayout"
+      });
+      // End Swagger UI call region
+
+      window.ui = ui;
+    };</script>
+   </body>
+</html>

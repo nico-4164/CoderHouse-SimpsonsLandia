@@ -1,0 +1,171 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #666;
+	background-image: url("../img/fondo.jpg");
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+
+/****************   Grillas   *******************/
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "header-contenido"
+    "contenido"
+    "footer";
+	grid-template-rows: 1fr 9fr 0.1fr;
+    }
+
+/***********************************************/
+
+
+
+/****************   Header   *******************/
+
+#header-contenido{
+    grid-area: header-contenido;
+    background: yellow;
+	color: black;
+    }
+
+#header-logo {
+	float: left;
+	padding: 30px 0 0 20px;
+	text-decoration: none;
+    }
+#header-logo:hover {
+    color: #0b76a6;
+    }
+
+#header-logo .titulo-header {
+    color: #333;
+    font-weight: 700;
+    font-size: 2.3em;
+    }
+
+#header-navegacion{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#header-navegacion ul li {
+    display: inline-block;
+    line-height: 80px;
+    }
+#header-navegacion ul a {
+    display: block;
+    padding: 0 10px;
+    }
+#header-navegacion ul a:hover {
+    background: blue;
+    color: white;
+    }
+/***********************************************/
+
+
+/****************   Contenido   *******************/
+
+#contenido{
+    grid-area: contenido;
+	height: 100%;
+	background-image: url(../img/Img-Principal.jpg);
+}
+
+/***********************************************/
+
+
+
+
+/****************   Footer   *******************/
+
+#footer{
+    grid-area: footer;
+    background-color: yellow;
+    bottom: 0;
+    text-align: center;
+}
+
+#footer p {
+    margin: 0;
+}
+
+#footer a {
+    color: white;
+}
+/*************************************************/
+
+
+.borde{
+    border: 1px solid black;
+
+}
+
+
+
+/****************   Modelo Responsive   *******************/
+
+@media screen and (max-width: 768px){
+	#grilla{
+		display: grid;
+		grid-template-areas: 
+		"header-contenido"
+		"contenido "
+		"footer ";
+		grid-template-rows: 1fr 5.5fr 0.1fr;
+		}
+	
+
+	#header-contenido{
+		grid-area: header-contenido;
+		display: grid;
+		grid-template-areas: 
+		"logo logo logo logo"
+		"nav nav nav nav";
+		background: yellow;
+		color: black;
+		}
+	
+	#header-logo {
+		grid-area: logo;
+		text-align: center;
+		}
+	
+	#header-logo .titulo-header {
+		color: #333;
+		font-size: 1.5em;
+		}
+	
+	#header-navegacion{
+		grid-area: nav;
+		flex-direction: row;
+	}
+
+	#header-navegacion ul a:hover {
+		background: blue;
+		}
+
+	#header-navegacion ul li {
+		display: unset;
+		line-height: 10px;
+		}
+
+	#header-navegacion ul a {
+		display: unset;
+		padding: 0px;
+		}
+
+	#contenido{
+		grid-area: contenido;
+		background-image: url(../img/Img-Principal-Movil.jpg);
+	}
+
+	.borde{
+		border: 1px solid rgb(0, 0, 0);
+	
+	}
+		
+}
+/*************************************************/

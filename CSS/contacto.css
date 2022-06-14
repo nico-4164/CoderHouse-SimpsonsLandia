@@ -1,0 +1,27 @@
+
+body {
+	background-image: url("../img/fondo.jpg");
+}
+
+#formulario {
+    font-family:'Open Sans Condensed', sans-serif;
+    width: 400px;
+    min-width:250px;
+    margin: 20px auto;
+    position: relative;
+  }
+
+#formulario .contenido {
+background-color:white;
+border-radius: 3px;
+}
+
+.contenido form{
+    border:1px solid #2f2f2f;
+    margin:0 auto;
+    display:block;
+    width:100%;
+    padding:30px 20px;
+    box-sizing:border-box;
+    border-radius:0 0 3px 3px;
+  }

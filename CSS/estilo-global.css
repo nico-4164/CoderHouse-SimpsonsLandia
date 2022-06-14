@@ -1,0 +1,92 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #666;
+	font-size: 1em;
+	line-height: 1.5em;
+    padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
+}
+
+/* 
+Estilo de la cabecera 
+*/
+
+#header-contenido {
+	background: yellow;
+	color: black;
+	height: 80px;
+    width: 100%; /* Hace que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posiciona la cabecera al lado izquierdo */
+	top: 0; /* Posiciona la cabecera pegada arriba */
+	position: fixed; /* Hace que la cabecera tenga una posición fija */
+}	
+
+
+
+/*
+ * Logo
+ */
+
+#header-logo {
+	float: left;
+	padding: 30px 0 0 20px;
+	text-decoration: none;
+}
+#header-logo:hover {
+    color: #0b76a6;
+}
+#header-logo .titulo-header {
+    display: block;
+    color: #333;
+    font-weight: 700;
+    font-size: 2.3em;
+}
+	
+
+/*
+ * Navegación
+ */
+
+nav {
+	float: right;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+}	
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+nav ul a {
+    display: block;
+    padding: 0 10px;
+}
+nav ul a:hover {
+    background: blue;
+    color: white;
+}
+
+
+
+
+
+/* Diseño para el footer */
+
+#footer {
+	background:yellow;
+	color: black;
+	text-align: center;
+	width: 100%;
+	bottom: 0;
+	position: fixed;
+}
+#footer p {
+    margin: 0;
+}
+
+#footer a {
+    color: white;
+}

@@ -1,0 +1,28 @@
+
+body {
+	background-image: url("../img/fondo.jpg");
+	padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
+	padding-bottom: 50px;
+}
+
+#tabla {
+	background-color: yellow;
+    font-family:'Open Sans Condensed', sans-serif;
+    width: 50%;
+    min-width:250px;
+    margin: 20px auto;
+	text-align: center;
+  }
+
+h1{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 5em;
+	text-align: center;
+	color: yellow;
+}
+
+#tabla table{
+	width: 100%;
+	background-color: white;
+}
+
