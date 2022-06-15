@@ -7,7 +7,7 @@ body {
 
 #grilla{
     display: grid;
-    background-color: deepskyblue;
+    background: radial-gradient(rgb(0, 183, 255),white, );
     grid-template-areas: 
     "header-contenido header-contenido header-contenido"
     "grilla-contenido grilla-contenido grilla-contenido"
@@ -104,8 +104,9 @@ body {
     height: 100%;
     text-align: center;
     align-items: center;
-    transition: all 1s;
     }
+
+
 
 #contenido a img:hover{
     background-color: blue;
