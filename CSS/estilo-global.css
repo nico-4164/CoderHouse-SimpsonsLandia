@@ -13,7 +13,7 @@ Estilo de la cabecera
 */
 
 #header-contenido {
-	background: yellow;
+	background: linear-gradient(yellow, white);
 	color: black;
 	height: 80px;
     width: 100%; /* Hace que la cabecera ocupe el ancho completo de la página */
@@ -76,7 +76,7 @@ nav ul a:hover {
 /* Diseño para el footer */
 
 #footer {
-	background:yellow;
+	background:linear-gradient(to top,yellow,white);
 	color: black;
 	text-align: center;
 	width: 100%;

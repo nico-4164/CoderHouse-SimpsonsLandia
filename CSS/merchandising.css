@@ -25,7 +25,7 @@ body {
 
 #header-contenido{
     grid-area: header-contenido;
-    background: yellow;
+    background:linear-gradient(yellow,white);
 	color: black;
     }
 
@@ -59,6 +59,7 @@ body {
     }
 #header-navegacion ul a:hover {
     background: blue;
+    transform: scale(1.5,1.5);
     color: white;
     }
 /***********************************************/
@@ -98,11 +99,20 @@ body {
 #contenido{
     grid-area: contenido;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     height: 100%;
     text-align: center;
+    align-items: center;
+    transition: all 1s;
     }
+
+#contenido a img:hover{
+    background-color: blue;
+    transform: scale(1.16,1.16);
+}
+
+
 
 /***********************************************/
 
@@ -114,7 +124,7 @@ body {
 
 #footer{
     grid-area: footer;
-    background-color: yellow;
+    background:linear-gradient(to top,yellow,white);
     bottom: 0;
     text-align: center;
     }
@@ -204,11 +214,14 @@ h1{
     #contenido{
         grid-area: contenido;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         height: 100%;
         text-align: center;
         font-size: 1.0em;
+    }
+    #contenido a img{
+        width: 90%;
     }
     /*****************************************/
 	.borde{

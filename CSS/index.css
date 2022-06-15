@@ -27,7 +27,7 @@ body {
 
 #header-contenido{
     grid-area: header-contenido;
-    background: yellow;
+    background: linear-gradient(yellow, white);
 	color: black;
     }
 
@@ -83,7 +83,7 @@ body {
 
 #footer{
     grid-area: footer;
-    background-color: yellow;
+    background:linear-gradient(to top,yellow, white);
     bottom: 0;
     text-align: center;
 }
@@ -98,10 +98,6 @@ body {
 /*************************************************/
 
 
-.borde{
-    border: 1px solid black;
-
-}
 
 
 
