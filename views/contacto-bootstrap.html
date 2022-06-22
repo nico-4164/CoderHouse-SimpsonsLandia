@@ -15,85 +15,58 @@
     <title>SimpsonsLandia</title>
 </head>
 <body>
+    <div id="grilla">
+        <header id="header-contenido">
 
-    <header id="cabecera">
+            <h1 id="titulo-header">SimpsonsLandia</h1>
 
-    <div class="container">
-        <nav>
-        <h1>Simpsonslandia</h1>
-        <ul class="nav">
-            <li class="nav-item">
-            <a href="../index-bootsrtap.html" class="nav-link">Inicio</a>
-            </li>
-            <li class="nav-item">
-            <a href="../views/personajes.html" class="nav-link">Personajes</a>
-            </li>
+            <nav id="header-navegacion">
+                <ul>
+                    <li><a href="../index-bootsrtap.html">Inicio</a></li>
+                    <li><a href="../views/personajes.html">Personajes</a></li>
+                    <li><a href="../views/merchandising.html">Merchandising</a></li>
+                    <li><a href="../views/temporadas.html">Temporadas</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            <div class="btn-group">
-            <button type="button" class="btn btn-primarydropdown-toggle" data-toggle="dropdown">
-                Merchandising
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="../views/merchandising.html">Bazar y Cocina</a>
-                <a class="dropdown-item" href="../views/merchandising.html">Juegos y Juguetes</a>
-                <a class="dropdown-item" href="../views/merchandising.html">Ropa</a>
-                <a class="dropdown-item" href="../views/merchandising.html">Libros, Revistas y Comics</a>
-                <a class="dropdown-item" href="../views/merchandising.html">Ropa</a>
+        <section id="contenido">
+            <div class="container" id="formulario">
+                <form action="#">
+                    <div class="form-goup">
+
+                        <label for="fname">First name:</label><br>
+                        <input class="form-control" type="text" id="fname" name="fname"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input class="form-control" type="text" id="lname" name="lname"><br>
+
+                        <br>
+
+                        <label for="fname">Seleccione su genero</label><br>
+                        <input type="radio" id="masculino" name="genero">
+                        <label for="masculino">masculino</label><br>
+                        <input type="radio" id="femenino" name="genero">
+                        <label for="femenino">femenino</label><br>
+                        <input type="radio" id="otro" name="genero">
+                        <label for="otro">otro</label><br><br>
+
+                        
+
+                        <input type="submit" value="Enviar Formulario">
+                        <input class="form-control" type="reset" value="Limpiar Formulario">
+
+                    </div>
+                </form> 
             </div>
-            </div>
-
-            <div class="btn-group">
-            <button type="button" class="btn btn-primarydropdown-toggle" data-toggle="dropdown">
-                Temporadas
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="../views/temporadas.html">Todas las Temporadas</a>
-                <a class="dropdown-item" href="../views/temporadas.html">Temporada 1</a>
-                <a class="dropdown-item" href="../views/temporadas.html">Temporada 2</a>
-                <a class="dropdown-item" href="../views/temporadas.html">Temporada 3</a>
-            </div>
-            </div>
-
-        </ul>
-        </nav>
+        </section>
+        
+        <footer id="footer">
+            <ul>
+                <span>nosotros</span>
+                <span>Términos y condiciones</span>
+                <span>ask</span>
+            </ul>
+        </footer>
     </div>
-    </header>
-
-    <section >
-        <div class="container" id="formulario">
-            <form action="#">
-                <div class="form-goup">
-
-                    <label for="fname">First name:</label><br>
-                    <input class="form-control" type="text" id="fname" name="fname"><br>
-                    <label for="lname">Last name:</label><br>
-                    <input class="form-control" type="text" id="lname" name="lname"><br>
-
-                    <br>
-
-                    <label for="fname">Seleccione su genero</label><br>
-                    <input type="radio" id="masculino" name="genero">
-                    <label for="masculino">masculino</label><br>
-                    <input type="radio" id="femenino" name="genero">
-                    <label for="femenino">femenino</label><br>
-                    <input type="radio" id="otro" name="genero">
-                    <label for="otro">otro</label><br><br>
-
-                    <input type="submit" value="Enviar Formulario">
-                    <input class="form-control" type="reset" value="Limpiar Formulario">
-
-                </div>
-            </form> 
-        </div>
-    </section>
-    
-    <footer id="footer">
-        <ul>
-            <span>nosotros</span>
-            <span>Términos y condiciones</span>
-            <span>ask</span>
-        </ul>
-    </footer>
-    
 </body>
 </html>

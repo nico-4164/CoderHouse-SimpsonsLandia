@@ -5,6 +5,9 @@ body {
 	background-color: rgb(161, 211, 255);
     }
 
+
+
+/****************   grillas   *******************/  
 #grilla{
     display: grid;
     background: radial-gradient(rgb(0, 183, 255),white, );
@@ -20,9 +23,12 @@ body {
     grid-template-columns: 10% 90%;
     align-items: stretch;
     }
+/***********************************************/
+
+
+
 
 /****************   Header   *******************/
-
 #header-contenido{
     grid-area: header-contenido;
     background:linear-gradient(yellow,white);
@@ -33,9 +39,6 @@ body {
 	float: left;
 	padding: 30px 0 0 20px;
 	text-decoration: none;
-    }
-#header-logo:hover {
-    color: #0b76a6;
     }
 
 #header-logo .titulo-header {
@@ -55,7 +58,8 @@ body {
     }
 #header-navegacion ul a {
     display: block;
-    padding: 0 10px;
+    padding: 0 50px;
+    transition: 0.5s;
     }
 #header-navegacion ul a:hover {
     background: blue;
@@ -69,7 +73,6 @@ body {
 
 
 /****************   Barra Lateral   *******************/
-
 #barra-lateral{
     grid-area: barra-lateral;
     
@@ -95,7 +98,6 @@ body {
 
 
 /****************   Contenido   *******************/
-
 #contenido{
     grid-area: contenido;
     display: grid;
@@ -106,15 +108,14 @@ body {
     align-items: center;
     }
 
-
+#contenido a img{
+    transition: 0.2s;
+}
 
 #contenido a img:hover{
     background-color: blue;
     transform: scale(1.16,1.16);
 }
-
-
-
 /***********************************************/
 
 
@@ -122,7 +123,6 @@ body {
 
 
 /****************   Footer   *******************/
-
 #footer{
     grid-area: footer;
     background:linear-gradient(to top,yellow,white);
@@ -140,6 +140,9 @@ body {
 /*************************************************/
 
 
+
+
+/****************   otros    *******************/
 .borde{
     border: 1px solid black;
 
@@ -148,8 +151,7 @@ body {
 h1{
     border: 1px solid black;
     }
-
-
+/************************************************/
 
 
 
@@ -196,6 +198,11 @@ h1{
 		flex-direction: row;
 	}
 
+    #header-navegacion ul a {
+		display: unset;
+		padding: 0px;
+		}
+        
 	#header-navegacion ul a:hover {
 		background: blue;
 		}
@@ -205,10 +212,7 @@ h1{
 		line-height: 10px;
 		}
 
-	#header-navegacion ul a {
-		display: unset;
-		padding: 0px;
-		}
+	
     /*****************************************/
 
     /*************  Contenido  ***************/

@@ -17,54 +17,44 @@
 </head>
 <body>
 
-  <div class="container"></div>
     <div id="grilla">
-    <header id="header-contenido">
+    <header id="header">
+    <div class="container" id="header-contenido">
         <nav>
-          <h1>Simpsonslandia</h1>
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="index-bootsrtap.html" class="nav-link">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a href="views/contacto-bootstrap.html" class="nav-link">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a href="views/personajes.html" class="nav-link">Personajes</a>
-            </li>
-
-            <div class="btn-group">
-              <button type="button" class="btn btn-primarydropdown-toggle" data-toggle="dropdown">
-                Merchandising
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="views/merchandising.html">Bazar y Cocina</a>
-                <a class="dropdown-item" href="views/merchandising.html">Juegos y Juguetes</a>
-                <a class="dropdown-item" href="views/merchandising.html">Ropa</a>
-                <a class="dropdown-item" href="views/merchandising.html">Libros, Revistas y Comics</a>
-                <a class="dropdown-item" href="views/merchandising.html">Ropa</a>
-              </div>
-            </div>
-
-            <div class="btn-group">
-              <button type="button" class="btn btn-primarydropdown-toggle" data-toggle="dropdown">
-                Temporadas
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="views/temporadas.html">Todas las Temporadas</a>
-                <a class="dropdown-item" href="views/temporadas.html">Temporada 1</a>
-                <a class="dropdown-item" href="views/temporadas.html">Temporada 2</a>
-                <a class="dropdown-item" href="views/temporadas.html">Temporada 3</a>
-              </div>
-            </div>
-
-          </ul>
+            <h1>Simpsonslandia</h1>
+            <ul class="nav">
+                <li class="nav-item">
+                <a href="views/contacto-bootstrap.html" class="nav-link">Contacto</a>
+                </li>
+            </ul>
         </nav>
-
+    </div>
     </header>
 
     <section id="contenido">
-      <img src="" alt="">
+      <div id="grilla-contenido">
+        <div id="contenido-personajes" class="cuadro">
+          <h2>Personajes</h2>
+          <span>Descubre secretos y curiosidades sobre tus personajes favoritos</span>
+          <a href="views/personajes.html">
+            <img src="img/index-personajes.jpg" alt="">
+          </a>
+        </div>
+        <div id="contenido-merchandising" class="cuadro">
+          <h2>Merchandising</h2>
+          <span>Todo el merch que necesites de los simpsons aqui mismo</span>
+          <a href="views/merchandising.html">
+            <img src="img/index-merch.jpg">
+          </a>
+        </div>
+        <div id="contenido-temporadas" class="cuadro">
+          <h2>Temporadas</h2>
+          <span>necesitas ayuda para recordar un capitulo o escena en particular, nosotros te ayudamos</span>
+          <a href="views/temporadas.html">
+            <img src="img/index-temporadas.jpg" alt="">
+          </a>
+        </div>
+      </div>
     </section>
 
     <footer id="footer">
@@ -74,7 +64,7 @@
           <span>ask</span>
       </ul>
     </footer>
-  </div>
-</div>
+
+    </div>
 </body>
 </html>
