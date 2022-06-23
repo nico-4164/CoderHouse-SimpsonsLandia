@@ -15,21 +15,25 @@
     }
 
 #header-navegacion{
-    display: flex;
-    flex-direction: row-reverse;
+    float: right;
 
-    ul li{
-        display: inline-block;
-    }
-    ul a{
-        display: block;
-        padding: 0 50px;
-        transition: 0.5s;
-    }
-    ul a:hover{
-        background: blue;
-        transform: scale(1.5,1.5);
-        color: white;
+    ul{
+        margin: 0;
+        padding: 0;
+        padding-right: 20px;
+        li{
+            display: inline-block;
+        }
+        a{
+            display: block;
+            padding: 0 50px;
+            transition: 0.5s;
+        }
+        a:hover{
+            background: blue;
+            transform: scale(1.5,1.5);
+            color: white;
+        }
     }
 }
 /**********************************************************/
