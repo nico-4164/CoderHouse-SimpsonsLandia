@@ -27,45 +27,41 @@ body {
 
 /**************** Diseño para el header ****************/
 
-#header-contenido{
-    grid-area: header-contenido;
-    background:linear-gradient(yellow,white);
+#header-contenido {
+	background: linear-gradient(yellow, white);
 	color: black;
-    }
-
-#header-logo {
-	float: left;
-	padding: 30px 0 0 20px;
-	text-decoration: none;
-    }
-
-#header-logo .titulo-header {
-    color: #333;
-    font-weight: 700;
-    font-size: 2.3em;
-    }
-
-#header-navegacion{
-    display: flex;
-    flex-direction: row-reverse;
-    }
-
-#header-navegacion ul li {
-    display: inline-block;
-    line-height: 80px;
-    }
-#header-navegacion ul a {
-    display: block;
-    padding: 0 50px;
-    transition: 0.5s;
-    }
-#header-navegacion ul a:hover {
-    background: blue;
-    transform: scale(1.5,1.5);
-    color: white;
-    }
+	height: 80px;
+  	width: 100%; /* Hace que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posiciona la cabecera al lado izquierdo */
+	top: 0; /* Posiciona la cabecera pegada arriba */
+	position: fixed; /* Hace que la cabecera tenga una posición fija */
+}	
 /**********************************************************/
 
+/*************** Estilo del nav ****************/
+nav {
+	float: right;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+}	
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+nav ul a {
+    display: block;
+    padding: 0 100px;
+    transition: 0.5s;
+}
+nav ul a:hover {
+    background: blue;
+    transform: scale(1.2,1.2);
+    color: white;
+}
+/******************************************************/
 
 /**************** Diseño para el contenido ****************/
 #formulario{

@@ -1,0 +1,164 @@
+
+
+body {
+    background-image: url("../img/fondo.jpg");
+      margin: 0;
+      padding: 0;
+      color: #666;
+      font-size: 1em;
+      line-height: 1.5em;
+      padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
+  }
+  
+  
+  /****************   Grillas   *******************/
+  #header-contenido{
+  display: grid;
+  grid-template-areas: 
+  "titulo-header header-navegacion";
+  grid-template-columns: 1fr 8fr;
+  text-align: center;
+  }
+  /***********************************************/
+  
+  
+  
+  /*************** Estilo de la cabecera ****************/
+  
+  #header-contenido {
+    background: linear-gradient(yellow, white);
+    color: black;
+    height: 80px;
+    width: 100%; /* Hace que la cabecera ocupe el ancho completo de la página */
+    left: 0; /* Posiciona la cabecera al lado izquierdo */
+    top: 0; /* Posiciona la cabecera pegada arriba */
+    position: fixed; /* Hace que la cabecera tenga una posición fija */
+  }	
+  /******************************************************/
+  
+  /*************** Estilo del nav ****************/
+nav {
+    float: right;
+
+    ul{
+        margin: 0;
+        padding: 0;
+        padding-right: 20px;
+
+        li{
+            display: inline-block;
+            line-height: 80px;
+        }
+        a{
+            display: block;
+            padding: 0 10px;
+            transition: 0.5s;
+        }
+        a:hover{
+            display: block;
+            padding: 0 10px;
+            transition: 0.5s;
+        }
+    }
+}
+/******************************************************/
+  
+  
+  
+/*************** Estilo del contenido ****************/
+#cuadro {
+    background-color: yellow;
+    font-family:'Open Sans Condensed', sans-serif;
+    min-width: 90%;
+    margin: 20px auto;
+    text-align: center;
+
+    table{
+        width: 100%;
+        background-color: white;
+    }
+    span{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 1.8em;
+        text-align: center;
+        color: black;
+    }
+    a{
+        display: block;
+        transition: 0.5s;
+    }
+    a:hover{
+        background: blue;
+        color: white;
+    }
+    th{
+        text-align: center;
+    }
+}
+
+
+/******************************************************/
+  
+  
+  
+/*************** Estilo del footer ****************/
+#footer {
+    background:linear-gradient(to top,yellow,white);
+    color: black;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+
+    p{
+        margin: 0;
+    }
+    a{
+        color: white;
+    }
+}
+/******************************************************/
+  
+  
+  
+/*************** Estilo responsive ****************/
+@media screen and (max-width: 768px){
+
+/*************  grillas  ***************/
+    #header-contenido{
+    grid-area: header-contenido;
+    display: grid;
+    grid-template-areas: 
+    "logo logo logo logo"
+    "nav nav nav nav";
+    background: yellow;
+    color: black;
+    }
+    /**************************************/
+
+    /*************  Header  ***************/
+    #header-contenido{
+            text-align: center;
+        }
+
+    #header-navegacion{
+        grid-area: nav;
+        flex-direction: row;
+
+        ul{
+            li{
+                display: unset;
+                line-height: 10px;
+                padding: 0px;
+            }
+            a{
+                display: unset;
+                padding: 0px;
+            } 
+            a:hover {
+                background: blue;
+                }
+        }
+    }
+/*****************************************/
+}

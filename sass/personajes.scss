@@ -15,45 +15,45 @@ body {
   }
 /***********************************************/
 
-/*************** Estilo de la cabecera ****************/
+/*************** Estilo del header ****************/
 
 #header-contenido {
 	background: linear-gradient(yellow, white);
 	color: black;
 	height: 80px;
-  width: 100%; /* Hace que la cabecera ocupe el ancho completo de la página */
+    width: 100%; /* Hace que la cabecera ocupe el ancho completo de la página */
 	left: 0; /* Posiciona la cabecera al lado izquierdo */
 	top: 0; /* Posiciona la cabecera pegada arriba */
 	position: fixed; /* Hace que la cabecera tenga una posición fija */
 }	
-/******************************************************/
 
-
-/*************** Estilo del nav ****************/
 nav {
 	float: right;
-}
-nav ul {
-    margin: 0;
-    padding: 0;
-    padding-right: 20px;
-}	
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-}
-nav ul a {
-    display: block;
-    padding: 0 100px;
-    transition: 0.5s;
-}
-nav ul a:hover {
-    background: blue;
-    transform: scale(1.2,1.2);
-    color: white;
+
+    ul{
+        margin: 0;
+        padding: 0;
+        padding-right: 20px;
+
+        li{
+            display: inline-block;
+            line-height: 80px;
+        }
+        a{
+            display: block;
+            padding: 0 100px;
+            transition: 0.5s;
+        }
+        a:hover{
+            background: blue;
+            transform: scale(1.2,1.2);
+            color: white;
+        }
+    }
 }
 /******************************************************/
 
+/*************** Estilo del contenido ****************/
 #tabla {
 	background-color: yellow;
     font-family:'Open Sans Condensed', sans-serif;
@@ -61,6 +61,11 @@ nav ul a:hover {
     min-width:250px;
     margin: 20px auto;
 	text-align: center;
+
+    table{
+        width: 100%;
+	    background-color: white;
+    }
   }
 
 #contenido h1{
@@ -69,11 +74,7 @@ nav ul a:hover {
 	text-align: center;
 	color: yellow;
 }
-
-#tabla table{
-	width: 100%;
-	background-color: white;
-}
+/******************************************************/
 
 /*************** Estilo del footer ****************/
 #footer {
@@ -83,12 +84,12 @@ nav ul a:hover {
 	width: 100%;
 	bottom: 0;
 	position: fixed;
-}
-#footer p {
-    margin: 0;
-}
 
-#footer a {
-    color: white;
+    p{
+        margin: 0;
+    }
+    a{
+        color: white;
+    }
 }
 /******************************************************/

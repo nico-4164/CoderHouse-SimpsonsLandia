@@ -1,0 +1,100 @@
+@charset "UTF-8";
+body {
+  background-image: url("../img/fondo.jpg"); }
+
+/* MISC */
+/****************  Diseño de las Grillas   *******************/
+#grilla {
+  display: grid;
+  grid-template-areas: "header-contenido"
+ "contenido"
+ "footer";
+  grid-template-rows: 1fr 8.6fr 0.1fr; }
+
+#header-contenido {
+  display: grid;
+  grid-template-areas: "titulo-header header-navegacion";
+  grid-template-columns: 1fr 8fr;
+  text-align: center; }
+
+/***********************************************/
+/* PARTIALS */
+/**************** Diseño para el header ****************/
+#header-contenido {
+  grid-area: header-contenido;
+  background: linear-gradient(yellow, white);
+  color: black;
+  line-height: 80px; }
+  #header-contenido h1 {
+    color: #333;
+    font-weight: 700;
+    font-size: 2.3em; }
+
+#header-navegacion {
+  display: flex;
+  flex-direction: row-reverse; }
+  #header-navegacion ul li {
+    display: inline-block; }
+  #header-navegacion ul a {
+    display: block;
+    padding: 0 50px;
+    transition: 0.5s; }
+  #header-navegacion ul a:hover {
+    background: blue;
+    transform: scale(1.5, 1.5);
+    color: white; }
+
+/**********************************************************/
+/**************** Diseño para el footer ****************/
+#footer {
+  background: linear-gradient(to top, yellow, white);
+  color: black;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  position: fixed; }
+  #footer p {
+    margin: 0; }
+  #footer a {
+    color: white; }
+
+/**********************************************************/
+/**************** Diseño para el contenido ****************/
+#formulario {
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid black;
+  margin: 5% auto; }
+
+/**********************************************************/
+/**************** Diseño para la vista movile ****************/
+@media screen and (max-width: 768px) {
+  /*************  grillas  ***************/
+  #grilla {
+    display: grid;
+    grid-template-areas: "header-contenido"
+ "contenido"
+ "footer";
+    grid-template-rows: 0.5fr 4fr 0.5fr; }
+  #header-contenido {
+    grid-area: header-contenido;
+    display: grid;
+    grid-template-areas: "logo logo logo logo"
+ "nav nav nav nav";
+    background: yellow;
+    color: black; }
+  /**************************************/
+  /*************  Header  ***************/
+  #header-contenido {
+    text-align: center; }
+  #header-navegacion {
+    grid-area: nav;
+    flex-direction: row; }
+    #header-navegacion ul li {
+      display: unset;
+      line-height: 10px;
+      padding: 0px; }
+    #header-navegacion ul a {
+      display: unset;
+      padding: 0px; }
+  /*****************************************/ }

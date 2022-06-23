@@ -1,0 +1,35 @@
+
+/**************** Diseño para el header ****************/
+
+#header-contenido{
+    grid-area: header-contenido;
+    background:linear-gradient(yellow,white);
+	color: black;
+    line-height: 80px;
+
+    h1{
+        color: #333;
+        font-weight: 700;
+        font-size: 2.3em;
+    }
+    }
+
+#header-navegacion{
+    display: flex;
+    flex-direction: row-reverse;
+
+    ul li{
+        display: inline-block;
+    }
+    ul a{
+        display: block;
+        padding: 0 50px;
+        transition: 0.5s;
+    }
+    ul a:hover{
+        background: blue;
+        transform: scale(1.5,1.5);
+        color: white;
+    }
+}
+/**********************************************************/

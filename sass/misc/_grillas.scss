@@ -1,0 +1,18 @@
+/****************  Diseño de las Grillas   *******************/
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "header-contenido"
+    "contenido"
+    "footer";
+	grid-template-rows: 1fr 8.6fr 0.1fr;
+    }
+
+#header-contenido{
+	display: grid;
+	grid-template-areas: 
+	"titulo-header header-navegacion";
+	grid-template-columns: 1fr 8fr;
+	text-align: center;
+	}
+/***********************************************/
