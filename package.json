@@ -8,7 +8,8 @@
     "build-index": "node-sass --include-path scss sass/index.scss css/index-translate.css",
     "build-contacto": "node-sass --include-path scss sass/contacto.scss css/contacto-translate.css",
     "build-temporadas": "node-sass --include-path scss sass/temporadas.scss css/temporadas-translate.css",
-    "build-personajes": "node-sass --include-path scss sass/personajes.scss css/personajes-translate.css"
+    "build-curiosidades": "node-sass --include-path scss sass/curiosidades.scss css/curiosidades-translate.css",
+    "build-merchandising": "node-sass --include-path scss sass/merchandising.scss css/merchandising-translate.css"
   },
   "repository": {
     "type": "git",

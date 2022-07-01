@@ -5,6 +5,14 @@ body {
     /* Relleno superior igual a la altura de la cabecera*/
     padding-bottom: 50px; }
 
+
+/* MISC */
+@import "./misc/variables";
+@import "./misc/normalize";
+@import "./misc/mixings";
+@import "./misc/grillas";
+
+
 /****************   Grillas   *******************/
 #header-contenido {
     display: grid;
@@ -21,20 +29,15 @@ body {
     }
 /***********************************************/
 
-
 /*************** Estilo del header ****************/
 #header-contenido {
     background: linear-gradient(yellow, white);
     color: black;
     height: 80px;
-    width: 100%;
-    /* Hace que la cabecera ocupe el ancho completo de la página */
-    left: 0;
-    /* Posiciona la cabecera al lado izquierdo */
-    top: 0;
-    /* Posiciona la cabecera pegada arriba */
-    position: fixed;
-    /* Hace que la cabecera tenga una posición fija */ }
+    width: 100%;/* Hace que la cabecera ocupe el ancho completo de la página */
+    left: 0;/* Posiciona la cabecera al lado izquierdo */
+    top: 0;/* Posiciona la cabecera pegada arriba */
+    position: fixed;/* Hace que la cabecera tenga una posición fija */ }
   
   nav {
     float: right; }
@@ -54,10 +57,7 @@ body {
         transform: scale(1.2, 1.2);
         color: white; }
   
-  /******************************************************/
-
-
-
+/******************************************************/
 
 
 /****************   Barra Lateral   *******************/
@@ -66,19 +66,19 @@ body {
     
     }
 
-#barra-lateral .contenido{
+.contenido{
     display: flex;
     flex-direction: column;
 	background-color:white;
 	border-radius: 3px;
-    }
 
-.contenido ul{
-    display: flex;
-    flex-direction: column;
-	background-color: whitesmoke;
-	
+    ul{
+        border-radius: 0px;
+        
     }
+}
+
+
 /***********************************************/
 
 

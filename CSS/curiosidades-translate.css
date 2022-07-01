@@ -1,9 +1,9 @@
-@charset "UTF-8";
 body {
-  background:radial-gradient(#92d4f7, rgb(96, 209, 224) );
+  background: radial-gradient(#a8defc, #54c4e0);
   padding-top: 80px;
-  /* Relleno superior igual a la altura de la cabecera*/
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-left: 0px;
+  padding-right: 0px; }
 
 /****************   Grillas   *******************/
 #header-contenido {
@@ -19,13 +19,11 @@ body {
   color: black;
   height: 80px;
   width: 100%;
-  /* Hace que la cabecera ocupe el ancho completo de la página */
-  left: 0;
-  /* Posiciona la cabecera al lado izquierdo */
   top: 0;
-  /* Posiciona la cabecera pegada arriba */
-  position: fixed;
-  /* Hace que la cabecera tenga una posición fija */ }
+  bottom: initial;
+  left: 0;
+  right: initial;
+  position: fixed; }
 
 nav {
   float: right; }
@@ -58,11 +56,21 @@ nav {
     width: 100%;
     background-color: white; }
 
-#contenido h1 {
+.contenido--titulo--principal, .contenido--titulo, .contenido--subtitulo {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: yellow;
+  font-weight: 100;
   font-size: 5em;
-  text-align: center;
-  color: yellow; }
+  text-align: center; }
+
+.contenido--titulo {
+  background-color: blue;
+  font-size: 3em; }
+
+.contenido--subtitulo {
+  text-align: left;
+  font-size: 1.5em;
+  border-radius: 10px black; }
 
 /******************************************************/
 /*************** Estilo del footer ****************/
@@ -70,8 +78,12 @@ nav {
   background: linear-gradient(to top, yellow, white);
   color: black;
   text-align: center;
+  height: initial;
   width: 100%;
+  top: initial;
   bottom: 0;
+  left: initial;
+  right: initial;
   position: fixed; }
   #footer p {
     margin: 0; }

@@ -33,6 +33,11 @@ body {
 /****************   Header   *******************/
 #header{
     background:linear-gradient(to bottom,yellow, white);
+	text-align: center;
+}
+#titulo{
+	color: #3bb0f0;
+	font-size: 5em;
 }
 /**************************************************/
 
@@ -43,7 +48,6 @@ body {
 /****************   Contenido   *******************/
 section {
 	background:radial-gradient(white ,#92d4f7);
-	/*background-image: url(../img/Img-Principal.jpg);*/
 }
 
 #contenido{

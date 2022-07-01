@@ -1,0 +1,21 @@
+
+
+@mixin sizes($alto, $ancho){
+    height: $alto;
+    width: $ancho;
+}
+
+@mixin positions($arriba, $abajo, $izquierda, $derecha, $posicion){
+    top: $arriba;
+    bottom: $abajo;
+    left: $izquierda;
+    right: $derecha;
+    position: $posicion;
+}
+
+@mixin paddings($arriba, $abajo, $izquierda, $derecha){
+    padding-top: $arriba;
+    padding-bottom: $abajo;
+    padding-left: $izquierda;
+    padding-right: $derecha;
+}

@@ -1,9 +1,16 @@
 
+
+//misc
+@import "./misc/variables";
+@import "./misc/mixings";
+
+
 body {
-	background-image: url("../img/fondo.jpg");
-	padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
-	padding-bottom: 50px;
+	background:radial-gradient(#a8defc,rgb(84, 196, 224));
+    @include paddings(80px, 50px, initial, initial);
 }
+
+
 
 /****************   Grillas   *******************/
 #header-contenido{
@@ -19,12 +26,9 @@ body {
 
 #header-contenido {
 	background: linear-gradient(yellow, white);
-	color: black;
-	height: 80px;
-    width: 100%; /* Hace que la cabecera ocupe el ancho completo de la página */
-	left: 0; /* Posiciona la cabecera al lado izquierdo */
-	top: 0; /* Posiciona la cabecera pegada arriba */
-	position: fixed; /* Hace que la cabecera tenga una posición fija */
+	color: map-get($map: $colores, $key:negro);
+    @include sizes(80px,100%);
+    @include positions(0,initial,0,initial,fixed);
 }	
 
 nav {
@@ -45,9 +49,9 @@ nav {
             transition: 0.5s;
         }
         a:hover{
-            background: blue;
+            background: map-get($map: $colores, $key: azul);
             transform: scale(1.2,1.2);
-            color: white;
+            color: map-get($map: $colores, $key: blanco);
         }
     }
 }
@@ -55,25 +59,40 @@ nav {
 
 /*************** Estilo del contenido ****************/
 #tabla {
-	background-color: yellow;
+	background-color: map-get($map: $colores, $key: amarillo);
     font-family:'Open Sans Condensed', sans-serif;
-    width: 50%;
+    @include positions(initial,50%);
     min-width:250px;
     margin: 20px auto;
 	text-align: center;
 
     table{
-        width: 100%;
-	    background-color: white;
+        @include positions(initial,100%);
+	    background-color: map-get($map: $colores, $key: blanco);
     }
   }
 
-#contenido h1{
+
+
+.contenido--titulo--principal{
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: map-get($map: $colores, $key: amarillo);
+    font-weight: 100;
 	font-size: 5em;
 	text-align: center;
-	color: yellow;
 }
+.contenido--titulo{
+    @extend .contenido--titulo--principal;
+    background-color: map-get($map: $colores, $key: azul);
+    font-size: 3em;
+}
+.contenido--subtitulo{
+    @extend .contenido--titulo--principal;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+
 /******************************************************/
 
 /*************** Estilo del footer ****************/
@@ -81,15 +100,14 @@ nav {
 	background:linear-gradient(to top,yellow,white);
 	color: black;
 	text-align: center;
-	width: 100%;
-	bottom: 0;
-	position: fixed;
+    @include sizes(initial,100%);
+    @include positions(initial,0,initial,initial,fixed);
 
     p{
         margin: 0;
     }
     a{
-        color: white;
+        color: map-get($map: $colores, $key: blanco);
     }
 }
 /******************************************************/
