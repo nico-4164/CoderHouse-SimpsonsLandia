@@ -18,7 +18,7 @@ body {
 	grid-template-areas: 
 	"titulo-header header-navegacion";
 	grid-template-columns: 1fr 8fr;
-	text-align: center;
+	text-align:  map-get($map: $estilos, $key: centro);
   }
 /***********************************************/
 
@@ -32,7 +32,7 @@ body {
 }	
 
 nav {
-	float: right;
+	float:  map-get($map: $estilos, $key: derecha);
 
     ul{
         margin: 0;
@@ -44,7 +44,7 @@ nav {
             line-height: 80px;
         }
         a{
-            display: block;
+            display:  map-get($map: $estilos, $key: bloque);
             padding: 0 100px;
             transition: 0.5s;
         }
@@ -64,7 +64,7 @@ nav {
     @include positions(initial,50%);
     min-width:250px;
     margin: 20px auto;
-	text-align: center;
+	text-align: map-get($map: $estilos, $key: centro);
 
     table{
         @include positions(initial,100%);
@@ -79,7 +79,7 @@ nav {
     color: map-get($map: $colores, $key: amarillo);
     font-weight: 100;
 	font-size: 5em;
-	text-align: center;
+	text-align: map-get($map: $estilos, $key: centro);
 }
 .contenido--titulo{
     @extend .contenido--titulo--principal;
@@ -88,7 +88,7 @@ nav {
 }
 .contenido--subtitulo{
     @extend .contenido--titulo--principal;
-    text-align: left;
+    text-align:  map-get($map: $estilos, $key: izquierda);
     font-size: 1.5em;
 }
 
