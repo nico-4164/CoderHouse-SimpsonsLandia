@@ -1,11 +1,8 @@
 body {
-  background: radial-gradient(#a8defc, #54c4e0);
-  padding-top: 80px;
-  padding-bottom: 50px;
-  padding-left: 0px;
-  padding-right: 0px; }
+  background: radial-gradient(#a8defc, #54c4e0);}
 
-/****************   Grillas   *******************/
+/* MISC */
+/****************  Diseño de las Grillas   *******************/
 #header-contenido {
   display: grid;
   grid-template-areas: "titulo-header header-navegacion";
@@ -13,37 +10,36 @@ body {
   text-align: center; }
 
 /***********************************************/
-/*************** Estilo del header ****************/
+/* PARTIALS */
+/**************** Diseño para el header ****************/
 #header-contenido {
+  grid-area: header-contenido;
   background: linear-gradient(yellow, white);
   color: black;
-  height: 80px;
-  width: 100%;
-  top: 0;
-  bottom: initial;
-  left: 0;
-  right: initial;
-  position: fixed; }
+  line-height: 80px; }
+  #header-contenido h1 {
+    color: #333;
+    font-weight: 700;
+    font-size: 2.3em; }
 
-nav {
+#header-navegacion {
   float: right; }
-  nav ul {
+  #header-navegacion ul {
     margin: 0;
     padding: 0;
     padding-right: 20px; }
-    nav ul li {
-      display: inline-block;
-      line-height: 80px; }
-    nav ul a {
+    #header-navegacion ul li {
+      display: inline-block; }
+    #header-navegacion ul a {
       display: block;
-      padding: 0 100px;
+      padding: 0 50px;
       transition: 0.5s; }
-    nav ul a:hover {
+    #header-navegacion ul a:hover {
       background: blue;
-      transform: scale(1.2, 1.2);
+      transform: scale(1.5, 1.5);
       color: white; }
 
-/******************************************************/
+/**********************************************************/
 /*************** Estilo del contenido ****************/
 #tabla {
   background-color: yellow;
@@ -91,3 +87,67 @@ nav {
     color: white; }
 
 /******************************************************/
+/**************** Diseño para la vista movile ****************/
+@media screen and (max-width: 768px) {
+  /*************  grillas  ***************/
+  #header-contenido {
+    grid-area: header-contenido;
+    display: grid;
+    grid-template-areas: "logo logo logo logo"
+ "nav nav nav nav";
+    background: yellow;
+    color: black; }
+  /**************************************/
+  /*************  Header  ***************/
+  #header-contenido {
+    text-align: center; }
+  #header-navegacion {
+    grid-area: nav;
+    flex-direction: row; }
+    #header-navegacion ul li {
+      display: unset;
+      line-height: 10px;
+      padding: 0px; }
+    #header-navegacion ul a {
+      display: unset;
+      padding: 0px; }
+  /*****************************************/ 
+ /*************  Contenido  ***************/
+ #contenido {
+  grid-area: contenido;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  height: 100%;
+  text-align: center;
+  font-size: 1.0em; }
+  #tabla {
+    background-color: yellow;
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 100%;
+    min-width: 250px;
+    margin: 20px auto;
+    text-align: center; }
+    #tabla table {
+      width: 100%;
+      background-color: white; }
+  .contenido--tabla span{
+    text-align: left;}
+  .contenido--tabla li{
+    text-align: left;}
+  .contenido--titulo--principal, .contenido--titulo, .contenido--subtitulo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: yellow;
+    font-weight: 100;
+    font-size: 2em;
+    text-align: center; }
+  .contenido--titulo {
+    background-color: blue;
+    font-size: 1.2em; }
+  .contenido--subtitulo {
+    text-align: left;
+    font-size: 1em;
+    border-radius: 10px black;}
+  img{
+    width: 100%;
+  }}

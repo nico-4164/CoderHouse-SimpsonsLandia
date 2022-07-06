@@ -1,14 +1,20 @@
 
 
-//misc
+/* MISC */
 @import "./misc/variables";
+@import "./misc/normalize";
 @import "./misc/mixings";
+@import "./misc/grillas";
 
+/* PARTIALS */
+@import "./partials/header";
+@import "./partials/footer";
 
 body {
 	background:radial-gradient(#a8defc,rgb(84, 196, 224));
     @include paddings(80px, 50px, initial, initial);
 }
+
 
 
 
@@ -22,40 +28,7 @@ body {
   }
 /***********************************************/
 
-/*************** Estilo del header ****************/
 
-#header-contenido {
-	background: linear-gradient(yellow, white);
-	color: map-get($map: $colores, $key:negro);
-    @include sizes(80px,100%);
-    @include positions(0,initial,0,initial,fixed);
-}	
-
-nav {
-	float:  map-get($map: $estilos, $key: derecha);
-
-    ul{
-        margin: 0;
-        padding: 0;
-        padding-right: 20px;
-
-        li{
-            display: inline-block;
-            line-height: 80px;
-        }
-        a{
-            display:  map-get($map: $estilos, $key: bloque);
-            padding: 0 100px;
-            transition: 0.5s;
-        }
-        a:hover{
-            background: map-get($map: $colores, $key: azul);
-            transform: scale(1.2,1.2);
-            color: map-get($map: $colores, $key: blanco);
-        }
-    }
-}
-/******************************************************/
 
 /*************** Estilo del contenido ****************/
 #tabla {
