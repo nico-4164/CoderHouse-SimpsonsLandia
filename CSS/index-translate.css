@@ -11,7 +11,7 @@ body {
   grid-template-areas: "header-contenido"
  "contenido"
  "footer";
-  grid-template-rows: 1fr 8.6fr 0.1fr; }
+  grid-template-rows: 1fr 5.5fr 0.1fr; }
 
 #grilla-contenido {
   display: grid;
