@@ -163,7 +163,7 @@ nav ul a:hover {
   #contenido {
     grid-area: contenido;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     height: 100%;
     text-align: center;
